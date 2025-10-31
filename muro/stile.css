@@ -1,0 +1,283 @@
+/* Estilos generales */ dani
+body {
+    font-family:"Dancing Script", "cursive";
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Encabezado */
+header {
+  
+    background-color: #810303;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: #000000;
+}
+
+nav a {
+    
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-decoration: none;  
+}
+
+nav a:hover {
+    color: #191918;
+}
+
+/* Buscador */
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.buscador input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #110303;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Artículos */
+
+.contact{
+    display: flex;
+    position: static;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.post {
+    background-color: rgb(206, 204, 204);
+    width: 80%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    color: #000000;
+}
+
+.compartir {
+  text-decoration: none;
+    background-color: #ad1022;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.compartir:hover {
+    background-color: #44f509;
+    color: black;
+}
+
+/* Pie de página */ 
+footer {
+    background-color: #630507;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+
+
+}
+
+.redes{
+  color :#810303
+}
+.redes a  {
+    display:flexbox;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+.redes a {
+    
+    background:none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-decoration: none;  
+}
+
+.redes a i:hover {
+    color: #191918;
+}
+
+/* modo oscuro*/
+
+.toggle-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:static;
+    background: #6d0303;
+    color: #f4f4f9;
+   width: 50%;
+   height:50% ;
+    border-radius: 2%;
+    border-style:hidden;
+    box-shadow: #960a0c;
+   
+}
+
+.dark-mode {
+  background-color: #4f4f4f;
+  color: #000000;
+}
+
+.dark-mode header {
+  background-color: #000000;
+}
+
+.dark-mode h1,  .dark-mode h3 {
+  color: #ffffff;
+}
+
+.dark-mode a  .post{
+  color: #000000;
+}
+
+
+
+.dark-mode p .dark-mode h2 {
+  color: #000000;
+
+
+}
+/* carusel*/
+
+ .post .ft {
+  align-items: center;
+}
+
+* {box-sizing: border-box;}
+
+.slideshow-container{
+justify-items: center;
+}
+.slideshow-container {
+  
+ max-width: 1000px;
+ position: relative;
+ margin: auto;
+}
+.mySlides {
+ display: none;
+
+}
+.prev, .next {
+  
+ cursor: pointer;
+ position: absolute;
+ top: 50%;
+ width: auto;
+ margin-top: -22px;
+ padding: 16px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+}
+.next {
+   justify-content: center;
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+ background-color: rgba(0,0,0,0.8);
+}
+.text {
+   
+ color: #f2f2f2;
+ font-size: 15px;
+ padding: 8px 12px;
+ position: absolute;
+ bottom: 8px;
+ width: 100%;
+ text-align: center;
+}
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+.dot {
+
+ cursor: pointer;
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #bbb;
+ border-radius: 50%;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+ background-color: #070707;
+}
+.fade {
+ animation-name: fade;
+ animation-duration: 1.5s;
+}
+@keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+
+/* responsivo*/
+@media (max-width:768px){
+  .main .center .searh{
+    width: 500px;
+  }
+}
+
+@media (max-width:583px){
+  .main .post div .redes{
+    left: 44%;
+    top:-52px;
+  }
+}
+
+@media (max-width: 580px) {
+  .main .post .div {
+    width: 100%;
+  }
+  .main .post .header{
+    display: none;
+  }
+  .main .top .fa {
+    cursor: pointer;
+    visibility: visible;
+  }
+}
